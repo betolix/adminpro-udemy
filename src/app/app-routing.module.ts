@@ -13,28 +13,29 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 
 
 
-const routes: Routes = [
-  {
-    path: '',
-    component: PagesComponent,
-    children: [
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'progress', component: ProgressComponent },
-      { path: 'grafiscas1', component: Graficas1Component },
-      { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+// const routes: Routes = [
+const appRoutes: Routes = [
+// {
+  //   path: '',
+  //   component: PagesComponent,
+  //   children: [
+  //     { path: 'dashboard', component: DashboardComponent },
+  //     { path: 'progress', component: ProgressComponent },
+  //     { path: 'graficas1', component: Graficas1Component },
+  //     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 
-    ]
-  },
+  //   ]
+  // },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent }, // FALTA GENERAR EL COMPONENTE
-
   { path: '**', component: NopagefoundComponent }
 ];
 
 @NgModule({
   //imports: [RouterModule.forRoot(routes)],
   // SE UTILIZO EL useHash: true
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(appRoutes, { useHash: true })],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { } // EXPORT CLASS O EXPORT CONST
+// export const APP_ROUTES  = RouterModule.forRoot( appRoutes );// EXPORT CLASS O EXPORT CONST
