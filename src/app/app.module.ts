@@ -10,6 +10,9 @@ import { PagesModule } from './pages/pages.module';
 // TEMPORAL
 import { FormsModule } from '@angular/forms';
 
+// SERVICIOS
+import { ServiceModule } from './services/service.module';
+
 // COMPONENTES
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -27,7 +30,8 @@ import { RegisterComponent } from './login/register.component';
     // AppRoutingModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
