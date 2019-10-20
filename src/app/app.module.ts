@@ -17,6 +17,7 @@ import { ServiceModule } from './services/service.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+import { ModalUploadComponent } from './components/modal-upload/modal-upload.component';
 //import { ImagenPipe } from './pipes/imagen.pipe';
 
 
