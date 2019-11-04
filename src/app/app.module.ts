@@ -18,6 +18,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { ModalUploadComponent } from './components/modal-upload/modal-upload.component';
+import { PagesComponent } from './pages/pages.component';
+import { SharedModule } from './shared/shared.module';
 //import { ImagenPipe } from './pipes/imagen.pipe';
 
 
@@ -25,17 +27,19 @@ import { ModalUploadComponent } from './components/modal-upload/modal-upload.com
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PagesComponent
 //    ImagenPipe
   ],
   imports: [
     BrowserModule,
     // AppRoutingModule,
     APP_ROUTES,
-    PagesModule,
+    // PagesModule,
     FormsModule,
     ReactiveFormsModule,
-    ServiceModule
+    ServiceModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
